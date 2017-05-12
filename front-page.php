@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<body <?php body_class(); ?>
+<body <?php body_class(); ?>>
 
 <!-- Search form overlay -->
 <div class="pm-search-container" id="pm-search-container">
@@ -105,54 +105,24 @@
                                     <p class="pm-header-support-text">Support: 1-888-555-5555</p>
                                 </li>
                                                     </ul>
-                        
-                                                        
-							<div class="pm-micro-nav-lang-selector desktop"><div class="pm-dropdown pm-language-selector-menu"><div class="pm-dropmenu"><p class="pm-menu-title">Language</p><i class="fa fa-angle-down"></i></div><div class="pm-dropmenu-active" style="display: none;"><ul><li><img src="https://wp.microthemes.ca/quantum/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.png"><a href="https://wp.microthemes.ca/quantum/?lang=fr">French</a></li></ul></div></div></div> 
-                            
                          
-                        
                     </div>
                     <div class="col-lg-6 col-md-5 col-sm-5 col-xs-12">
                         <div class="pm-header-buttons-spacer">
                         
                                                         
-                                    <ul class="pm-header-buttons-ul">
-                            
-                                                                                    <li>
-                                                <p class="pm-header-login-text">Get Started Today</p>
+                                    <ul class="pm-header-buttons-ul">                            
+                                            <li>
+                                                <p class="pm-header-login-text">Начните сегодня!</p>
                                             </li>
-                                                                                
-                                                                                    <li>
-                                                <div class="pm-base-btn pm-header-btn pm-register-btn">
-                                                    <a href="/quantum/registration">Register</a>
-                                                </div>
-                                            </li>
-                                                                                
-                                                                                    <li>
-                                                <div class="pm-base-btn pm-header-btn pm-login-btn">
-                                                    <a href="/quantum/login">Login</a>
-                                                </div>
-                                            </li>
-                                                                                                                    
-                                                                                    <li>
-                                                <div class="pm-base-btn pm-header-btn search" id="pm-search-btn">
+                                            <li>
+                                                <div class="pm-base-btn pm-header-btn search expand" id="pm-quick-login-btn">
                                                     <a class="fa fa-search"></a>
                                                 </div>
                                             </li>
                                                                                 
-                                                                                    <li>
-                                                <div class="pm-base-btn pm-header-btn search expand" id="pm-quick-login-btn">
-                                                    <a class="typcn typcn-th-large-outline"></a>
-                                                </div>
-                                            </li>
-                                                                                
                                     </ul>
-                            
-                                                        
-                                                            
-								<div class="pm-micro-nav-lang-selector mobile"><div class="pm-dropdown pm-language-selector-menu"><div class="pm-dropmenu"><p class="pm-menu-title">Language</p><i class="fa fa-angle-down"></i></div><div class="pm-dropmenu-active"><ul><li><img src="https://wp.microthemes.ca/quantum/wp-content/plugins/sitepress-multilingual-cms/res/flags/fr.png"><a href="https://wp.microthemes.ca/quantum/?lang=fr">French</a></li></ul></div></div></div> 
-                                
-                                                                            
+                                                      
                         </div>
                         
                     </div>
@@ -940,45 +910,6 @@ We’ll create a custom program or workshop just for your company.<br>
                                     <div id="latest-tweets-2" class="widget tweets"><h6><i class="fa fa-twitter pm-sidebar-icon"></i> Twitter</h6>
 			<div id="pm-twitter-news" class="pm-tweet-list"><ul><li><div class="tweet_container"><p class="tweet">What You Need To Know About OAuth2 And Logging In With Facebook <a href="https://t.co/cLGC3MtpWH" data-expanded-url="http://flip.it/Q9pk_w" target="_blank" title="http://flip.it/Q9pk_w" data-scribe="element:url"><span>http://</span>flip.it/Q9pk_w<span>&nbsp;</span></a></p><p class="interact"><a href="https://twitter.com/intent/tweet?in_reply_to=859428450611982338" class="twitter_reply_icon" target="_blank">Reply</a><a href="https://twitter.com/intent/retweet?tweet_id=859428450611982338" class="twitter_retweet_icon" target="_blank">Retweet</a><a href="https://twitter.com/intent/favorite?tweet_id=859428450611982338" class="twitter_fav_icon" target="_blank">Favorite</a></p></div></li><li><div class="tweet_container"><p class="tweet">Medical-Link version 1.3.9 is now live. Check out the full changelog here: <a href="https://t.co/WIcGaOsboj" data-expanded-url="https://www.microthemes.ca/change-logs/medical-link-v1-3-9-apr-25-2017/" target="_blank" title="https://www.microthemes.ca/change-logs/medical-link-v1-3-9-apr-25-2017/" data-scribe="element:url"><span>https://www.</span>microthemes.ca/change-logs/me<span>dical-link-v1-3-9-apr-25-2017/&nbsp;</span>…</a></p><p class="interact"><a href="https://twitter.com/intent/tweet?in_reply_to=857000752354643968" class="twitter_reply_icon" target="_blank">Reply</a><a href="https://twitter.com/intent/retweet?tweet_id=857000752354643968" class="twitter_retweet_icon" target="_blank">Retweet</a><a href="https://twitter.com/intent/favorite?tweet_id=857000752354643968" class="twitter_fav_icon" target="_blank">Favorite</a></p></div></li></ul></div> 
             
-			<script type="text/javascript">
-							  
-				(function($) {
-					
-					$(document).ready(function(e) {
-												
-						var twitterConfig = {
-						  "id": '794019793695285248',
-						  "domId": 'pm-twitter-news',
-						  "maxTweets": 2,
-						  "enableLinks": true,
-						  "showUser": false,
-						  "showTime": false,
-						  "dateFunction": '',
-						  "showRetweet": true,
-						  "customCallback": handleTweets,
-						  "showInteraction": true,
-						};
-						
-						function handleTweets(tweets){
-							var x = tweets.length;
-							var n = 0;
-							var element = document.getElementById('pm-twitter-news');
-							var html = '<ul>';
-							while(n < x) {
-							  html += '<li><div class="tweet_container">' + tweets[n] + '</div></li>';
-							  n++;
-							}
-							html += '</ul>';
-							element.innerHTML = html;
-						}
-						
-						twitterFetcher.fetch(twitterConfig);
-												
-					});
-				  
-				})(jQuery);
-				
-			</script>
 			
 </div>                                </div>
                         
@@ -1088,62 +1019,6 @@ We’ll create a custom program or workshop just for your company.<br>
                
         
     
-	</div><!-- /pm_layout_wrapper -->
-
-        
-                
-		<script type="text/javascript" src="//wp.microthemes.ca/quantum/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-var woocommerce_params = {"ajax_url":"\/quantum\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/quantum\/?wc-ajax=%%endpoint%%"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="//wp.microthemes.ca/quantum/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=2.6.14"></script>
-<script type="text/javascript" src="//wp.microthemes.ca/quantum/wp-content/plugins/woocommerce/assets/js/jquery-cookie/jquery.cookie.min.js?ver=1.4.1"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-var wc_cart_fragments_params = {"ajax_url":"\/quantum\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/quantum\/?wc-ajax=%%endpoint%%","fragment_name":"wc_fragments"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="//wp.microthemes.ca/quantum/wp-content/plugins/woocommerce/assets/js/frontend/cart-fragments.min.js?ver=2.6.14"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/bootstrap3/js/bootstrap.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/jquery.fitvids.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/superfish/superfish.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-includes/js/hoverIntent.min.js?ver=1.8.1"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/tinynav.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/jquery.easing.1.3.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/jquery.hoverPanel.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/plugins/js_composer/assets/lib/bower/flexslider/jquery.flexslider-min.js?ver=5.0.1"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/owl-carousel/owl.carousel.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/easypiechart/jquery.easypiechart.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/countdown/countdown.js?ver=1.0"></script>
-<script type="text/javascript" src="//maps.google.com/maps/api/js?key=AIzaSyCFCeUcNrakmmBeZndw9LU7vzRTtPG1Lro&amp;libraries=places"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/wow/wow.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/jquery.viewport.mini.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/jquery.tooltip.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/stellar/jquery.stellar.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/main.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/theme-color-selector.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/twitter-post-fetcher/twitterFetcher_min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/ajax-contact/ajax-email.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/ajax-registration/ajax-registration.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/themes/quantum-theme/js/ajax-login/ajax-login.min.js?ver=1.0"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-includes/js/wp-embed.min.js?ver=4.7.2"></script>
-<script type="text/javascript">
-/* <![CDATA[ */
-var icl_vars = {"current_language":"en","icl_home":"https:\/\/wp.microthemes.ca\/quantum","ajax_url":"https:\/\/wp.microthemes.ca\/quantum\/wp-admin\/admin-ajax.php","url_type":"3"};
-/* ]]> */
-</script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/plugins/sitepress-multilingual-cms/res/js/sitepress.js?ver=4.7.2"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js?ver=5.0.1"></script>
-<script type="text/javascript" src="https://wp.microthemes.ca/quantum/wp-content/plugins/js_composer/assets/lib/bower/skrollr/dist/skrollr.min.js?ver=5.0.1"></script>
- 
-    
-
-<!-- Performance optimized by W3 Total Cache. Learn more: https://www.w3-edge.com/products/
-
-Page Caching using disk: enhanced (SSL caching disabled)
-Database Caching 2/170 queries in 0.208 seconds using disk
-
- Served from: wp.microthemes.ca @ 2017-05-12 06:52:49 by W3 Total Cache --></body>
+	</div>
+    </body>
 <?php get_footer(); ?>

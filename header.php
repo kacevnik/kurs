@@ -8,14 +8,10 @@
 	<link rel="alternate" type="application/rss+xml" title="Comments RSS" href="<?php bloginfo('comments_rss2_url'); ?>">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>" />
 	<link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
+	<script type="text/javascript">
+/* <![CDATA[ */
+var wordpressOptionsObject = {"urlRoot":"https:\/\/wp.microthemes.ca\/quantum","templateDir":"https:\/\/wp.microthemes.ca\/quantum\/wp-content\/themes\/quantum-theme","stickyNav":"on","autoPlaySpeed":"8000","slideSpeed":"500","rewindSpeed":"1000","ppAnimationSpeed":"","ppAutoPlay":"false","ppShowTitle":"","ppColorTheme":"dark_square","ppSlideShowSpeed":"6040","dropMenuIndicator":"fa-angle-down","securityError":"Security answer invalid. Please answer the security question correctly.","successMessage":"Your inquiry has been received, thank you.","failedMessage":"A system error occurred. Please try again later.","ajaxSearchResult":"No results","fieldValidation":"Validating Fields...","loginMessage":"Validating credentials, please wait...","loginMessageSuccess":"Login successful, refreshing page...","loginMessageInvalid":"Invalid credentials, try again.","contactForm1":"Please fill in your name.","contactForm2":"Please provide a valid email address.","contactForm3":"Please provide a subject line.","contactForm4":"Please provide a message for your inquiry.","quickContact1":"Please provide your full name.","quickContact2":"Please provide a valid email address.","quickContact3":"Please provide a message for your inquiry.","reg1":"Please provide your name.","reg2":"Please provide a valid email address.","reg3":"Please enter a username.","reg4":"Please enter a password for your account.","reg5":"Security answer invalid. Please answer the security question correctly.","reg6":"Your registration is complete! You can now proceed to login.","reg7":"A system error has occurred, please try again.","pm_ln_ajax_url":"https:\/\/wp.microthemes.ca\/quantum\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
 	<?php wp_head(); ?>
 </head>
-	<header>
-		<?php
-			$args = array('theme_location' => 'top', 'container'=> 'nav', 'menu_class' => 'bottom-menu', 'menu_id' => 'bottom-nav');
-			wp_nav_menu($args);
-		?>
-		<style id="wpml-legacy-dropdown-0-inline-css" type="text/css">
-.wpml-ls-statics-shortcode_actions{background-color:#eeeeee;}.wpml-ls-statics-shortcode_actions, .wpml-ls-statics-shortcode_actions .wpml-ls-sub-menu, .wpml-ls-statics-shortcode_actions a {border-color:#cdcdcd;}.wpml-ls-statics-shortcode_actions a {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions a:hover,.wpml-ls-statics-shortcode_actions a:focus {color:#000000;background-color:#eeeeee;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a {color:#444444;background-color:#ffffff;}.wpml-ls-statics-shortcode_actions .wpml-ls-current-language:hover>a, .wpml-ls-statics-shortcode_actions .wpml-ls-current-language>a:focus {color:#000000;background-color:#eeeeee;}
-</style>
-	</header>
