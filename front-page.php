@@ -1,139 +1,81 @@
 <?php get_header(); ?>
 <body <?php body_class(); ?>>
 
-<!-- Search form overlay -->
-<div class="pm-search-container" id="pm-search-container">
-    <!-- Search window -->
-    <div class="pm-search-columns">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 pm-center">
-                    <p>Search News Posts</p>
-                </div>          
-            </div>
-            <div class="row">
-                <div class="col-lg-12">                       
-                    <div class="pm-search-box">
-                       <i class="fa-search pm-search-submit" id="pm-search-submit"></i>
-                        <form name="searchform" id="pm-searchform" method="get" action="https://wp.microthemes.ca/quantum/">
-                            <input type="text" name="s" placeholder="Type Keywords...">
-                        </form>
+    <!-- Search form overlay -->
+    <div class="pm-search-container" id="pm-search-container">
+        <!-- Search window -->
+        <div class="pm-search-columns">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12 pm-center">
+                        <p>Поиск по сайту</p>
+                    </div>          
+                </div>
+                <div class="row">
+                    <div class="col-lg-12">                       
+                        <div class="pm-search-box">
+                           <i class="fa-search pm-search-submit" id="pm-search-submit"></i>
+                            <form name="searchform" id="pm-searchform" method="get" action="">
+                                <input type="text" name="s" placeholder="Начните поиск...">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">                    
+                    <div class="col-lg-12">
+                        <i class="fa fa-times pm-search-exit" id="pm-search-exit"></i>
                     </div>
                 </div>
             </div>
-            <div class="row">                    
-                <div class="col-lg-12">
-                    <i class="fa fa-times pm-search-exit" id="pm-search-exit"></i>
-                </div>
-            </div>
         </div>
+<!-- Search window end -->
+
     </div>
-    <!-- Search window end -->  
-</div>
+    
 <!-- Search form overlay end -->
 
-
-     <div class="pm-full-mode" id="pm_layout_wrapper">
-
-	    
-        
-    	<div class="pm-quick-login-container">
-            <div class="container">
-                <div class="row">
-                
-                    <div class="pm-quick-login-container-spacing">
-                    
-                        <div class="col-lg-6 col-md-6 col-sm-5 col-xs-12">
-                        
-                        	<p>Not Registered? <a href="/quantum/registration">Click here</a> to sign up</p>                        
-                        </div>
-                        
-                        <div class="col-lg-6 col-md-6 col-sm-7 col-xs-12">
-                            
-    <div class="pm-ln-quick-login-form">
-    
-    	<form class="form-horizontal registraion-form" role="form">
-        
-        	<ul class="pm-ln-quick-login-list">
-        
-                <li>
-                    <input type="text" name="pm_quick_username" id="pm_quick_username" value="" placeholder="Username" maxlength="70" class="pm-ln-quick-login-textfield">
-                </li>
-                <li>
-                    <input type="password" name="pm_quick_password" id="pm_quick_password" value="" placeholder="Password" maxlength="70" class="pm-ln-quick-login-textfield">
-                </li>
-                <li>
-                    <input type="submit" value="Sign in" id="btn-quick-login" class="pm-base-btn pm-header-btn pm-register-btn">
-                </li>
-            
-            </ul>
-            
-            <input type="hidden" id="pm_ln_quick_login_nonce" name="pm_ln_quick_login_nonce" value="e001f75a6b"><input type="hidden" name="_wp_http_referer" value="/quantum/">        
-        </form>
-        
-    </div>
-
-                        </div>
-                    
-                    </div>            
-                    
-                </div>
-            </div>
-        </div>
-    
+    <div class="pm-full-mode" id="pm_layout_wrapper">  
         <div id="pm-quick-message" class="pm-quick-login-message">
             <span><i id="pm-quick-message-close" class="typcn typcn-times"></i> Validating credentials, please wait...</span>
         </div>
-    
+            
+<!-- pm-header-info -->        
         
-        
-        
-    	<div class="pm-header-info">
-        
-            <div class="container pm-header-info-container">
-                
+    	<div class="pm-header-info">        
+            <div class="container pm-header-info-container">                
                 <div class="row">
                     <div class="col-lg-6 col-md-7 col-sm-7 col-xs-12">
                         <ul class="pm-header-support-ul">
-                                                            <li>
-                                    <p class="pm-header-support-text">General Inquiries: 1-888-555-5555</p>
-                                </li>
-                                                        
-                                                            <li class="pm-header-support-text-bullet"><p class="pm-header-support-text">•</p></li>
-                                                        
-                                                            <li>
-                                    <p class="pm-header-support-text">Support: 1-888-555-5555</p>
-                                </li>
-                                                    </ul>
-                         
+                            <li>
+                                <p class="pm-header-support-text">Наши телефоны: 8-903-555-5555</p>
+                            </li>
+                            <li class="pm-header-support-text-bullet">
+                                <p class="pm-header-support-text">•</p>
+                            </li>
+                            <li>
+                                <p class="pm-header-support-text">Потдержка: 1-888-555-5555</p>
+                            </li>
+                        </ul>                        
                     </div>
                     <div class="col-lg-6 col-md-5 col-sm-5 col-xs-12">
-                        <div class="pm-header-buttons-spacer">
-                        
-                                                        
-                                    <ul class="pm-header-buttons-ul">                            
-                                            <li>
-                                                <p class="pm-header-login-text">Начните сегодня!</p>
-                                            </li>
-                                            <li>
-                                                <div class="pm-base-btn pm-header-btn search expand" id="pm-quick-login-btn">
-                                                    <a class="fa fa-search"></a>
-                                                </div>
-                                            </li>
-                                                                                
-                                    </ul>
-                                                      
-                        </div>
-                        
+                        <div class="pm-header-buttons-spacer">                    
+                            <ul class="pm-header-buttons-ul">                            
+                                <li>
+                                    <p class="pm-header-login-text">Начните сегодня!</p>
+                                </li>
+                                <li>
+                                    <div class="pm-base-btn pm-header-btn search" id="pm-search-btn">
+                                        <a class="fa fa-search"></a>
+                                    </div>
+                                </li>
+                           </ul>                                                      
+                        </div>                        
                     </div>
-                </div>
-                
-            </div>
-            
-        </div><!-- /pm-header-info -->
-    
-    
-	
+                </div>                
+            </div>            
+        </div>
+
+<!-- /pm-header-info -->
     
     <header>
                 
