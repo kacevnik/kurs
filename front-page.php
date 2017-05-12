@@ -1,227 +1,63 @@
-<?php get_header(); ?>       	        
+<?php get_header(); ?> 
+
+
         		<!-- PRESENTATION AREA -->
                 <div class="pm-presentation-container pm-parallax-panel" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="97" style="background-position: 0px 50px;">
-                    
-                                        
                     <div class="pm-presentation-text-container" style="height:335px; top:25%;">
                         <div class="pm-presentation-text">
-                                                        <h1>Welcome to quantum</h1>
-                            <p>A premium WordPress theme for businesses and corporations</p>
+                            <h1>Добро пожаловать в Asbis</h1>
+                            <p>Ознакомтесь с нашими последними курасами</p>
                         </div>
-                        
-                                                
-                        						
-							                            
-                             <ul class="pm-presentation-posts owl-carousel owl-theme" id="pm-presentation-owl" style="opacity: 1; display: block;">
-                             
-                                                            
-                                    
-<div class="owl-wrapper-outer"><div class="owl-wrapper" style="width: 3200px; left: 0px; display: block; transition: all 800ms ease; transform: translate3d(0px, 0px, 0px);"><div class="owl-item" style="width: 320px;"><li>
-  <div class="pm-presentation-post-container">
+                        <ul class="pm-presentation-posts owl-carousel owl-theme" id="pm-presentation-owl">
+<?php
+    $args = array(
+        'numberposts' => 20,
+        'post_status' => 'publish',
+        'category'    => 3,
+        'orderby'     => 'date'
+    ); 
+
+    $result = wp_get_recent_posts($args);
+
+    foreach( $result as $p ){ 
+?>                            <li>
+                                <div class="pm-presentation-post-container">
+                                    <div class="pm-presentation-post-date">
+                                        <div class="pm-presentation-post-date-box">
+                                            <p class="pm-month">Jul </p>
+                                            <p class="pm-day">31</p>
+                                        </div>               
+                                    	<div class="pm-presentation-post-comment-count">
+                                            <p>0</p>
+                                        </div>
+                                    </div>
+
+<!-- /pm-presentation-post-date -->
       
-      <div class="pm-presentation-post-date">
-      
-        <div class="pm-presentation-post-date-box">
-            <p class="pm-month">Jul </p>
-            <p class="pm-day">31</p>
-        </div>
-        
-                
-        	<div class="pm-presentation-post-comment-count">
-                <p>0</p>
-            </div>
-        
-         
-        
-      </div><!-- /pm-presentation-post-date -->
-      
-      <div class="pm-presentation-post-title">
-        <p>
-			Multiple Icon Libraries...
-        </p>
-      </div>
-      
-      <div class="pm-presentation-post-excerpt">
-        <p>Two popular icon libraries! Choose...</p>
-      </div>
-      
-      <div class="pm-presentation-post-hover-container">
-        <!--<p class="pm-presentation-post-hover-title">protected posts</p>-->
-        <p class="pm-presentation-post-hover-excerpt">Two popular icon libraries! Choose from two awesome icon libraries for whichever design style suits you best. <a href="https://wp.microthemes.ca/quantum/multiple-icon-libraries/">[...]</a>
-</p>
-        <a href="https://wp.microthemes.ca/quantum/multiple-icon-libraries/">Read More »</a>
-      </div>
-      
-      <div class="pm-presentation-post-img">
-      	        		<img src="https://wp.microthemes.ca/quantum/wp-content/uploads/2016/09/05_post.jpg" alt="Multiple Icon Libraries" class="lazyOwl" style="display: inline;"> 
-                
-      </div>
-  </div><!-- /pm-presentation-post-container -->
-</li></div><div class="owl-item" style="width: 320px;"><li>
-  <div class="pm-presentation-post-container">
-      
-      <div class="pm-presentation-post-date" style="left: 210px;">
-      
-        <div class="pm-presentation-post-date-box">
-            <p class="pm-month">Jul </p>
-            <p class="pm-day">31</p>
-        </div>
-        
-                
-        	<div class="pm-presentation-post-comment-count">
-                <p>0</p>
-            </div>
-        
-         
-        
-      </div><!-- /pm-presentation-post-date -->
-      
-      <div class="pm-presentation-post-title" style="bottom: 70px;">
-        <p>
-			Mobile Ready...
-        </p>
-      </div>
-      
-      <div class="pm-presentation-post-excerpt" style="bottom: 36px;">
-        <p>Scales to all viewports and...</p>
-      </div>
-      
-      <div class="pm-presentation-post-hover-container" style="left: 290px;">
-        <!--<p class="pm-presentation-post-hover-title">protected posts</p>-->
-        <p class="pm-presentation-post-hover-excerpt">Scales to all viewports and browsers. Quantum is built on the powerful Bootstrap 3 framework and comes fully equipped with <a href="https://wp.microthemes.ca/quantum/mobile-ready/">[...]</a>
-</p>
-        <a href="https://wp.microthemes.ca/quantum/mobile-ready/">Read More »</a>
-      </div>
-      
-      <div class="pm-presentation-post-img" style="transform: scale(1, 1);">
-      	        		<img src="https://wp.microthemes.ca/quantum/wp-content/uploads/2016/09/01_post.jpg" alt="Mobile Ready" class="lazyOwl" style="display: inline;"> 
-                
-      </div>
-  </div><!-- /pm-presentation-post-container -->
-</li></div><div class="owl-item" style="width: 320px;"><li>
-  <div class="pm-presentation-post-container">
-      
-      <div class="pm-presentation-post-date" style="left: 210px;">
-      
-        <div class="pm-presentation-post-date-box">
-            <p class="pm-month">Jul </p>
-            <p class="pm-day">31</p>
-        </div>
-        
-                
-        	<div class="pm-presentation-post-comment-count">
-                <p>0</p>
-            </div>
-        
-         
-        
-      </div><!-- /pm-presentation-post-date -->
-      
-      <div class="pm-presentation-post-title" style="bottom: 70px;">
-        <p>
-			E-commerce Support...
-        </p>
-      </div>
-      
-      <div class="pm-presentation-post-excerpt" style="bottom: 36px;">
-        <p>Sell digital goods and services...</p>
-      </div>
-      
-      <div class="pm-presentation-post-hover-container" style="left: 290px;">
-        <!--<p class="pm-presentation-post-hover-title">protected posts</p>-->
-        <p class="pm-presentation-post-hover-excerpt">Sell digital goods and services with ease. Woocommerce is a free and powerful e-commerce platform for WordPress and Quantum comes <a href="https://wp.microthemes.ca/quantum/e-commerce-support/">[...]</a>
-</p>
-        <a href="https://wp.microthemes.ca/quantum/e-commerce-support/">Read More »</a>
-      </div>
-      
-      <div class="pm-presentation-post-img" style="transform: scale(1, 1);">
-      	        		<img src="https://wp.microthemes.ca/quantum/wp-content/uploads/2016/09/06_post.jpg" alt="E-commerce Support" class="lazyOwl" style="display: inline;"> 
-                
-      </div>
-  </div><!-- /pm-presentation-post-container -->
-</li></div><div class="owl-item" style="width: 320px;"><li>
-  <div class="pm-presentation-post-container">
-      
-      <div class="pm-presentation-post-date">
-      
-        <div class="pm-presentation-post-date-box">
-            <p class="pm-month">Jul </p>
-            <p class="pm-day">31</p>
-        </div>
-        
-                
-        	<div class="pm-presentation-post-comment-count">
-                <p>0</p>
-            </div>
-        
-         
-        
-      </div><!-- /pm-presentation-post-date -->
-      
-      <div class="pm-presentation-post-title">
-        <p>
-			Private Members Area...
-        </p>
-      </div>
-      
-      <div class="pm-presentation-post-excerpt">
-        <p>Upload and set private files...</p>
-      </div>
-      
-      <div class="pm-presentation-post-hover-container">
-        <!--<p class="pm-presentation-post-hover-title">protected posts</p>-->
-        <p class="pm-presentation-post-hover-excerpt">Upload and set private files for registered members. You can upload popular file types such as PDF's, Word docs, Excel, <a href="https://wp.microthemes.ca/quantum/private-members-area/">[...]</a>
-</p>
-        <a href="https://wp.microthemes.ca/quantum/private-members-area/">Read More »</a>
-      </div>
-      
-      <div class="pm-presentation-post-img">
-      	        		<img src="https://wp.microthemes.ca/quantum/wp-content/uploads/2016/09/07_post.jpg" alt="Private Members Area" class="lazyOwl" style="display: inline;"> 
-                
-      </div>
-  </div><!-- /pm-presentation-post-container -->
-</li></div><div class="owl-item" style="width: 320px;"><li>
-  <div class="pm-presentation-post-container">
-      
-      <div class="pm-presentation-post-date">
-      
-        <div class="pm-presentation-post-date-box">
-            <p class="pm-month">Jul </p>
-            <p class="pm-day">30</p>
-        </div>
-        
-                
-        	<div class="pm-presentation-post-comment-count">
-                <p>0</p>
-            </div>
-        
-         
-        
-      </div><!-- /pm-presentation-post-date -->
-      
-      <div class="pm-presentation-post-title">
-        <p>
-			Protected Posts...
-        </p>
-      </div>
-      
-      <div class="pm-presentation-post-excerpt">
-        <p>Keep your posts protected and...</p>
-      </div>
-      
-      <div class="pm-presentation-post-hover-container">
-        <!--<p class="pm-presentation-post-hover-title">protected posts</p>-->
-        <p class="pm-presentation-post-hover-excerpt">Keep your posts protected and private for logged in members only. The private post feature is a great for protecting <a href="https://wp.microthemes.ca/quantum/protected-posts/">[...]</a>
-</p>
-        <a href="https://wp.microthemes.ca/quantum/protected-posts/">Read More »</a>
-      </div>
-      
-      <div class="pm-presentation-post-img">
-      	        		<img src="https://wp.microthemes.ca/quantum/wp-content/uploads/2016/09/02_post.jpg" alt="Protected Posts" class="lazyOwl" style="display: inline;"> 
-                
-      </div>
-  </div><!-- /pm-presentation-post-container -->
-</li></div></div></div>                                
+                                    <div class="pm-presentation-post-title">
+                                        <p>Multiple Icon Libraries...</p>
+                                    </div>      
+                                    <div class="pm-presentation-post-excerpt">
+                                        <p>Two popular icon libraries! Choose...</p>
+                                    </div> 
+                                    <div class="pm-presentation-post-hover-container">
+                                        <p class="pm-presentation-post-hover-excerpt">
+                                            Two popular icon libraries! Choose from two awesome icon libraries for whichever design style suits you best. 
+                                        <a href="<?php echo get_permalink($p['ID']); ?>">[...]</a>
+                                        </p>
+                                        <a href="<?php echo get_permalink($p['ID']); ?>">Подробнее »</a>
+                                    </div>
+                                    <div class="pm-presentation-post-img">
+      	        		               <img src="<?php echo get_the_post_thumbnail_url($p['ID'], 'full'); ?>" alt="" class="lazyOwl"> 
+                                    </div>
+                                </div>
+
+<!-- /pm-presentation-post-container -->
+
+</li>
+<?php } ?>
+
+</div></div>                                
                                                             
                                     
                                 

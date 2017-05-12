@@ -4559,6 +4559,10 @@ header.fixed {
 	height: 40px;
 }
 
+img, iframe, embed {
+    max-width: none;
+}
+
 /* SASS imports */
 @import 'footer';
 @import 'comments';
