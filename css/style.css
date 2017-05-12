@@ -4551,9 +4551,16 @@ header.fixed {
     width: 100%;
 }
 
+.pm-header-logo-container{
+	margin: 16px 0 0 0;
+}
+
+.pm-header-logo-container img{
+	height: 40px;
+}
+
 /* SASS imports */
 @import 'footer';
-@import 'btn'; 
 @import 'comments';
 @import 'flickrfeed';
 @import 'forms';

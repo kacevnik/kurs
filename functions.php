@@ -119,6 +119,7 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 	    wp_enqueue_style( 'font', get_template_directory_uri().'/css/font-awesome.min.css' ); //Шрифты
 		wp_enqueue_style( 'mainstyle', get_template_directory_uri().'/css/style.css' ); // основные стили шаблона
 		wp_enqueue_style( 'btn_style', get_template_directory_uri().'/css/btn.css' ); // Стили кнопок для сайта
+		wp_enqueue_style( 'superfish', get_template_directory_uri().'/css/superfish.css' ); // Стили главного меню
 	}
 }
 
