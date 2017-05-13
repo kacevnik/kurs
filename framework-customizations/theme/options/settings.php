@@ -104,13 +104,11 @@
     		'type' => 'tab',
     		'options' => array(
         		'kdv_gallery_off'  => array(
-				    'type'  => 'checkbox',
+				    'type'  => 'switch',
 				    'value' => true, // checked/unchecked
-				    'attr'  => array( 'class' => 'custom-class', 'data-foo' => 'bar' ),
 				    'label' => __('Включть галерею', '{domain}'),
 				    'desc'  => __('', '{domain}'),
-				    'help'  => __('Если включить, то галерея будет отражаться на главной странице', '{domain}'),
-				    'text'  => __('Да', '{domain}'),
+				    'help'  => __('Если включить, то галерея будет отражаться на главной странице', '{domain}')
 				),
 
 				'kdv_gallery_background' => array(

@@ -1637,7 +1637,8 @@ header.fixed {
 	height:auto;
 	padding:20px 10px 25px 10px;
 	text-align:center;
-	
+	float: left;
+	margin: 0 70px 0 0;
 	border-radius:0px 80px 99px 99px;
 	-moz-border-radius:0px 80px 99px 99px;
 	-webkit-border-radius:0px 80px 99px 99px;
@@ -4560,6 +4561,38 @@ header.fixed {
 
 img, iframe, embed {
     max-width: none;
+}
+
+.kdv_section_present{
+	background-color: #283e4e;
+	padding: 40px 0 40px 0;
+	color: #ffffff;
+}
+
+.kdv_section_present .fw-iconbox .fw-iconbox-title h3 {
+    font-family: "Open Sans";
+    line-height: 28px;
+    font-weight: 300;
+    font-style: normal;
+    color: #ffffff;
+    font-size: 22px;
+}
+
+.kdv_section_present .fw-iconbox-2 .fw-iconbox-image {
+    color: #ffffff;
+}
+
+.kdv_section_procent{
+	padding: 100px 0 70px 0;
+}
+
+.kdv_section_procent .kdv_section_procent_item{
+	float: left;
+	margin: 0 75px 0 0;
+}
+
+.pm-statistic-box-container-orange{
+	background-color: #dbc164;
 }
 
 /* SASS imports */

@@ -104,6 +104,9 @@ function kdv_custom_css_style() {
 	}else{
 		return;
 	}
+?>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+<?php
 }
 
 add_action("wp_head", "kdv_custom_css_script");
@@ -149,6 +152,7 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 		wp_enqueue_style( 'btn_style', get_template_directory_uri().'/css/btn.css' ); // Стили кнопок для сайта
 		wp_enqueue_style( 'superfish', get_template_directory_uri().'/css/superfish.css' ); // Стили главного меню
 		wp_enqueue_style( 'owl-carousel', get_template_directory_uri().'/css/owl.carousel.css' ); // Стили owl карусели
+		wp_enqueue_style( 'animate', get_template_directory_uri().'/css/animate.css' ); // Стили owl карусели
 	}
 }
 
