@@ -1204,7 +1204,6 @@ header.fixed {
 .pm-presentation-container {
 	height:850px;
 	width:100%;
-	background-image:url(../img/presentation_background.jpg);
 	/*background-position:top center;*/
 	margin-top:-97px;
 	position:relative;

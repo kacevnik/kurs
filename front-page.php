@@ -2,25 +2,28 @@
 
 
         		<!-- PRESENTATION AREA -->
-                <div class="pm-presentation-container pm-parallax-panel" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="97" style="background-position: 0px 50px;">
+                <div class="pm-presentation-container pm-parallax-panel" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="97">
                     <div class="pm-presentation-text-container" style="height:335px; top:25%;">
                         <div class="pm-presentation-text">
-                            <h1>Добро пожаловать в Asbis</h1>
-                            <p>Ознакомтесь с нашими последними курасами</p>
+                            <h1><?php echo fw_get_db_settings_option('kdv_slogan_1'); ?></h1>
+                            <p><?php echo fw_get_db_settings_option('kdv_slogan_2'); ?></p>
                         </div>
+<?php 
+    if(fw_get_db_settings_option('kdv_gallery_off') == 1){
+?>
                         <ul class="pm-presentation-posts owl-carousel owl-theme" id="pm-presentation-owl">
 <?php
     $args = array(
-        'numberposts' => 20,
+        'numberposts' => fw_get_db_settings_option('kdv_gallery_count_items'),
         'post_status' => 'publish',
-        'category'    => 3,
+        'category'    => fw_get_db_settings_option('kdv_gallery_category'),
         'orderby'     => 'date'
     ); 
 
     $result = wp_get_recent_posts($args);
 
     foreach( $result as $p ){ 
-?>                            <li>
+?>                          <li>
                                 <div class="pm-presentation-post-container">
                                     <div class="pm-presentation-post-date">
                                         <div class="pm-presentation-post-date-box">
@@ -51,7 +54,7 @@
                                                         }
                                                     }
                                                 }else{
-                                                    echo "DEF category";
+                                                    echo "Интересные курсы";
                                                 }
                                             ?>                                                
                                             </p>
@@ -70,32 +73,15 @@
 
 <!-- /pm-presentation-post-container -->
 
-</li>
+                            </li>
 <?php } ?>
-
-</div></div>                                
-                                                            
-                                    
-                                
-                                                            
-                                    
-                                
-                                                            
-                                    
-                                
-                                                            
-                                    
-                                
-                                 
-                                                 
-                            </ul>
-                            
                                                     
-                                                
+                        </ul>
+<?php } ?>                                  
                     </div>
-                                
                 </div>
-                <!-- PRESENTATION AREA end -->
+
+<!-- PRESENTATION AREA end -->
         
                 
                     
