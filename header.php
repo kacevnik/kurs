@@ -63,13 +63,13 @@ var wordpressOptionsObject = {"urlRoot":"https:\/\/wp.microthemes.ca\/quantum","
                     <div class="col-lg-6 col-md-7 col-sm-7 col-xs-12">
                         <ul class="pm-header-support-ul">
                             <li>
-                                <p class="pm-header-support-text">Наши телефоны: 8-903-555-5555</p>
+                                <p class="pm-header-support-text">Наши телефоны: <?php echo fw_get_db_settings_option('kdv_phone_header'); ?></p>
                             </li>
                             <li class="pm-header-support-text-bullet">
                                 <p class="pm-header-support-text">•</p>
                             </li>
                             <li>
-                                <p class="pm-header-support-text">Потдержка: 1-888-555-5555</p>
+                                <p class="pm-header-support-text">Потдержка: <?php echo fw_get_db_settings_option('kdv_phone_header2'); ?></p>
                             </li>
                         </ul>                        
                     </div>
@@ -99,7 +99,7 @@ var wordpressOptionsObject = {"urlRoot":"https:\/\/wp.microthemes.ca\/quantum","
                     <div class="col-lg-4 col-md-3 col-sm-12 pm-header-logo-div">
                         <div class="pm-header-logo-container">
                     	   <a href="<?php echo home_url(); ?>">
-                                <img src="<?php echo get_template_directory_uri().'/img/logo.png'; ?>" class="img-responsive" alt="IT курсы">
+                                <img src="<?php echo fw_get_db_settings_option('kdv_logo')['url']; ?>" class="img-responsive" alt="IT курсы">
                             </a>
                         </div>
                         <div class="pm-header-mobile-btn-container">

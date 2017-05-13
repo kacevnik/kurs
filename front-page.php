@@ -24,31 +24,47 @@
                                 <div class="pm-presentation-post-container">
                                     <div class="pm-presentation-post-date">
                                         <div class="pm-presentation-post-date-box">
-                                            <p class="pm-month">Jul </p>
-                                            <p class="pm-day">31</p>
+                                            <p class="pm-month"><?php echo get_the_date('M', $p['ID']); ?></p>
+                                            <p class="pm-day"><?php echo get_the_date('d', $p['ID']); ?></p>
                                         </div>               
                                     	<div class="pm-presentation-post-comment-count">
-                                            <p>0</p>
+                                            <p><?php echo get_comments_number( $p['ID'] ); ?></p>
                                         </div>
                                     </div>
 
 <!-- /pm-presentation-post-date -->
       
                                     <div class="pm-presentation-post-title">
-                                        <p>Multiple Icon Libraries...</p>
+                                        <p><?php echo $p['post_title']; ?></p>
                                     </div>      
                                     <div class="pm-presentation-post-excerpt">
-                                        <p>Two popular icon libraries! Choose...</p>
+                                        <p>
+                                            <?php
+                                                $arr_cat = get_the_category($p['ID']);
+                                                if(count($arr_cat) > 1){
+                                                    foreach ($arr_cat as $arr_cat_item) {
+                                                        if($arr_cat_item->id == $args['category']){
+                                                            continue;
+                                                        }else{
+                                                            echo $arr_cat_item->name;
+                                                            break;
+                                                        }
+                                                    }
+                                                }else{
+                                                    echo "DEF category";
+                                                }
+                                            ?>                                                
+                                            </p>
                                     </div> 
                                     <div class="pm-presentation-post-hover-container">
                                         <p class="pm-presentation-post-hover-excerpt">
-                                            Two popular icon libraries! Choose from two awesome icon libraries for whichever design style suits you best. 
+                                            <?php echo get_the_excerpt($p['ID']); ?> 
                                         <a href="<?php echo get_permalink($p['ID']); ?>">[...]</a>
                                         </p>
                                         <a href="<?php echo get_permalink($p['ID']); ?>">Подробнее »</a>
                                     </div>
                                     <div class="pm-presentation-post-img">
-      	        		               <img src="<?php echo get_the_post_thumbnail_url($p['ID'], 'full'); ?>" alt="" class="lazyOwl"> 
+      	        		               <img src="<?php echo get_the_post_thumbnail_url($p['ID'], 'full'); ?>" alt="<?php echo $p['post_title']; ?>" class="lazyOwl"> 
                                     </div>
                                 </div>
 
@@ -72,7 +88,7 @@
                                 
                                  
                                                  
-                            <div class="owl-controls clickable"><div class="owl-buttons"><div class="owl-prev"><i class="fa fa-angle-left"></i></div><div class="owl-next"><i class="fa fa-angle-right"></i></div></div></div></ul>
+                            </ul>
                             
                                                     
                                                 
