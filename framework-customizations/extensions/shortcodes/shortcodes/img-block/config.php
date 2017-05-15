@@ -4,10 +4,10 @@ $cfg = array();
 
 $cfg = array(
     'page_builder' => array(
-    'title'         => __('Блок с картинкой', 'fw'),
-    'description'   => __('Блок с картинкой и текстом', 'fw'),
+    'title'         => __('Блок', 'fw'),
+    'description'   => __('Настраевымый блок с заголовком и произвольным кодом.', 'fw'),
     'tab'           => __('Content Elements', 'fw'),
-    'popup_size'    => 'small', // can be large, medium or small
+    'popup_size'    => 'medium', // can be large, medium or small
 
         /*
         // Icon examples
@@ -15,7 +15,7 @@ $cfg = array(
         'icon' => 'http://.../image-16x16.png', // background color should be #8c8c8c
         'icon' => 'dashicons dashicons-admin-site',
         'icon' => 'unycon unycon-crown',*/
-    'icon' => 'fa fa-picture-o',
+    'icon' => 'fa fa-code',
         
 
         /*

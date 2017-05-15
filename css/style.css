@@ -4595,6 +4595,51 @@ img, iframe, embed {
 	background-color: #dbc164;
 }
 
+.custom_take_your h3{
+	font-family: "Open Sans";
+    line-height: 30px;
+    font-weight: 300;
+    font-style: normal;
+    color: #2b5d83;
+    font-size: 30px;
+}
+
+.custom_take_your p{
+    font-family: "Open Sans";
+    line-height: 28px;
+    font-weight: 300;
+    font-style: normal;
+    color: #5f5f5f;
+    font-size: 14px;
+}
+
+.upcoming-workshops h3{
+	font-family: "Open Sans";
+    line-height: 40px;
+    font-weight: 400;
+    font-style: normal;
+    color: #2b5d83;
+    font-size: 46px;
+    text-align: center;
+    margin-top: 0 0 10px 0;
+}
+
+.upcoming-workshops p{
+    font-family: "Open Sans";
+    line-height: 28px;
+    font-weight: 300;
+    font-style: normal;
+    color: #5f5f5f;
+    font-size: 18px;
+}
+
+.upcoming-workshops p a{
+    font-weight: normal;
+}
+
+.pm-column-border-oramge{
+	border-top: 5px solid #dbc164;
+}
 /* SASS imports */
 @import 'footer';
 @import 'comments';

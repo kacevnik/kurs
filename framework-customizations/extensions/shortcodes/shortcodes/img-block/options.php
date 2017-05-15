@@ -2,6 +2,11 @@
 	die( 'Forbidden' );
 }
 
+global $wpdb;
+
+$forms = $wpdb->get_results('SELECT * FROM '. $wpdb->prefix.'posts WHERE post_type="wpcf7_contact_form"');
+
+
 $animation_arr = array(
 	array(
 		'attr'    => array('label' => __('Attention Seekers', '{domain}')),
@@ -195,8 +200,28 @@ $options = array(
 				'type'  => 'text',
 				'label' => __( 'Пользовательский id элемента', 'fw' ),
 			)
-
 		)
+    ),
+
+    'option_header' => array(
+        'type' => 'tab',
+        'title' => __('Заголовок', '{domain}'),
+        'options' => array(
+            'header' => array(
+                'type'  => 'select',
+                'label' => __( 'Тип Заголовка', 'fw' ),
+                'help'  => __( 'Укажите тип заголовка (от H1 до H6)', 'fw' ),
+                'choices' => array(
+                    'h1' => 'h1',
+                    'h2' => 'h2',
+                    'h3' => 'h3',
+                    'h4' => 'h4',
+                    'h5' => 'h5',
+                    'h6' => 'h6',
+                ),
+                'no-validate' => false
+            )
+        )
     ),
 
     'option_animate' => array(
@@ -218,7 +243,7 @@ $options = array(
 			     * Allow save not existing choices
 			     * Useful when you use the select to populate it dynamically from js
 			     */
-			    'no-validate' => false,
+			    'no-validate' => false
 			),
 
 			'duration' => array(
