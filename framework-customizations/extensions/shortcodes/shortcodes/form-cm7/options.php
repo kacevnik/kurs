@@ -2,6 +2,20 @@
 	die( 'Forbidden' );
 }
 
+global $wpdb;
+
+$celect_form = array();
+
+$forms = $wpdb->get_results('SELECT * FROM '. $wpdb->prefix.'posts WHERE post_type="wpcf7_contact_form"');
+
+if(count($forms) > 0){
+    foreach ($forms as $form_item) {
+        $celect_form['[contact-form-7 id="' . $form_item->ID . '" title="' . $form_item->post_title . '"]'] = $form_item->post_title;
+    }
+}else{
+    $celect_form[0] = 'Плагин CF7 не установлен или нет форм';
+}
+
 $animation_arr = array(
 	array(
 		'attr'    => array('label' => __('Attention Seekers', '{domain}')),
@@ -164,19 +178,18 @@ $options = array(
 				'help'  => __( 'Укажите заголовок блока (выводиться в тегах h3)', 'fw' ),
 			),
 
-			'custom_text' => array(
-			    'type'  => 'wp-editor',
-			    'label' => __('Произвольный текст', '{domain}'),
-			    'size' => 'small', // small, large
-			    'editor_height' => 400,
-			    'wpautop' => true,
-			    'editor_type' => false, // tinymce, html
+            'select_form' => array(
+                'type'  => 'select',
+                'label' => __('Выберите форму', '{domain}'),
+                'help'  => __('Выберите форму плагина Contact Form 7 для вставки на страницу', '{domain}'),
+                'choices' => $celect_form,
 
-			    /**
-			     * Also available
-			     * https://github.com/WordPress/WordPress/blob/4.4.2/wp-includes/class-wp-editor.php#L80-L94
-			     */
-			),
+                /**
+                 * Allow save not existing choices
+                 * Useful when you use the select to populate it dynamically from js
+                 */
+                'no-validate' => false
+            ),
 
 			'bg_color' => array(
 			    'type'  => 'color-picker',
