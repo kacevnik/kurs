@@ -165,18 +165,26 @@ $options = array(
 			),
 
 			'custom_text' => array(
-			    'type'  => 'wp-editor',
-			    'label' => __('Произвольный текст', '{domain}'),
-			    'size' => 'small', // small, large
+			    'type'          => 'wp-editor',
+			    'label'         => __('Произвольный текст', '{domain}'),
+			    'size'          => 'small', // small, large
 			    'editor_height' => 400,
-			    'wpautop' => true,
-			    'editor_type' => false, // tinymce, html
+			    'wpautop'       => true,
+			    'editor_type'   => true, // tinymce, html
+                'size'          => 'large', // small, large
 
 			    /**
 			     * Also available
 			     * https://github.com/WordPress/WordPress/blob/4.4.2/wp-includes/class-wp-editor.php#L80-L94
 			     */
 			),
+
+            'dop_text' => array(
+                'type'  => 'textarea',
+                'value' => '',
+                'label' => __('Дополнительный HTML', '{domain}'),
+                'desc'  => __('Задайте дополнительный html код при обрезке визуальным редактором', '{domain}'),
+            ),
 
 			'bg_color' => array(
 			    'type'  => 'color-picker',

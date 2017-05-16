@@ -71,6 +71,8 @@ if($add_custom_class){
 <div class="fw-kdv-custom-img-block<?php echo $custom_class.$animate_class; ?><?php echo $add_custom_class_1; ?>"<?php echo $custom_id; ?><?php echo $add_custom_class_1; ?><?php echo $animate; ?>>
 
 	<?php echo $title; ?>
+	
+	<?php echo $atts['dop_text']; ?>
 <?php
 	echo $atts['custom_text'];
 ?>
