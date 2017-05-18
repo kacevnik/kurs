@@ -4567,11 +4567,11 @@ header.fixed {
 }
 
 .pm-header-logo-container{
-	margin: 16px 0 0 0;
+	margin: 10px 0 0 0;
 }
 
 .pm-header-logo-container img{
-	height: 40px;
+	height: 56px;
 }
 
 img, iframe, embed {
@@ -4682,6 +4682,10 @@ img, iframe, embed {
 	font-style: normal;
 	color: #5f5f5f;
 	font-size: 14px;
+}
+
+.pm-proven{
+	background-position: 0 600px;
 }
 /* SASS imports */
 @import 'footer';
