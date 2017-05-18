@@ -122,14 +122,16 @@ var wordpressOptionsObject = {"urlRoot":"https:\/\/wp.microthemes.ca\/quantum","
 }
 
 //Хлебные крошки
-function the_breadcrumb() {
+function the_breadcrumb($es) {
     if (!is_front_page()) {
         echo '<p><a href="';
         echo get_option('home');
         echo '">Главная';
         echo '</a></p><p><i class="fa fa-angle-right"></i></p>';
         if (is_category() || is_single()) {
-            the_category(' ');
+        	echo '<p class="kdv-red-b">';
+            echo $es;
+            echo '</p>';
             if (is_single()) {
                 echo '<p><i class="fa fa-angle-right"></i></p>';
                 echo '<p class="kdv-red-b">';
