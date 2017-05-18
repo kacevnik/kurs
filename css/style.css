@@ -1079,10 +1079,11 @@ header.fixed {
 
 .pm-career-opening-widget-post a {
 	text-decoration:none;
-	font-size:14px;
+	font-size:13px;
 	color:#dbc164;
 	text-transform:uppercase;	
 	font-weight:700 !important;
+	font-family: 'Open Sans';
 	
 	transition:all 0.3s;
 	-moz-transition:all 0.3s;

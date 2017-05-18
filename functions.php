@@ -153,6 +153,9 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 		wp_enqueue_style( 'superfish', get_template_directory_uri().'/css/superfish.css' ); // Стили главного меню
 		wp_enqueue_style( 'owl-carousel', get_template_directory_uri().'/css/owl.carousel.css' ); // Стили owl карусели
 		wp_enqueue_style( 'animate', get_template_directory_uri().'/css/animate.css' ); // Стили owl карусели
+		wp_enqueue_style( 'footer', get_template_directory_uri().'/css/footer.css' ); // Стили футера
+		wp_enqueue_style( 'sidebar', get_template_directory_uri().'/css/sidebar.css' ); // Стили сайтбара
+		wp_enqueue_style( 'twitterfeed', get_template_directory_uri().'/css/twitterfeed.css' ); // Стили сайтбара
 	}
 }
 
