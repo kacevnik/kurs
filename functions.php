@@ -121,6 +121,32 @@ var wordpressOptionsObject = {"urlRoot":"https:\/\/wp.microthemes.ca\/quantum","
 <?php
 }
 
+//Хлебные крошки
+function the_breadcrumb() {
+    if (!is_front_page()) {
+        echo '<p><a href="';
+        echo get_option('home');
+        echo '">Главная';
+        echo '</a></p><p><i class="fa fa-angle-right"></i></p>';
+        if (is_category() || is_single()) {
+            the_category(' ');
+            if (is_single()) {
+                echo '<p><i class="fa fa-angle-right"></i></p>';
+                echo '<p class="kdv-red-b">';
+                the_title();
+                echo '</p>';
+            }
+        } elseif (is_page()) {
+            echo '<p class="kdv-red-b">';
+             the_title();
+            echo '</p>';
+        }
+    }
+    else {
+        echo 'Главная';
+    }
+}
+
 add_action('wp_footer', 'add_scripts'); // приклеем ф-ю на добавление скриптов в футер
 if (!function_exists('add_scripts')) { // если ф-я уже есть в дочерней теме - нам не надо её определять
 	function add_scripts() { // добавление скриптов
