@@ -50,6 +50,6 @@
             
 <?php if (comments_open() || get_comments_number()) comments_template('', true); // если комментирование открыто - мы покажем список комментариев и форму, если закрыто, но кол-во комментов > 0 - покажем только список комментариев ?>
 </section>
-
+<?php endwhile; // конец цикла ?>
 
 <?php get_footer(); ?>
