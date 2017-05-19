@@ -4693,8 +4693,6 @@ img, iframe, embed {
 .pm-proven{
 	background-position: 0 600px;
 }
-<<<<<<< Updated upstream
-=======
 
 .page-numbers{
 	list-style: none;
@@ -4766,7 +4764,6 @@ transition: all 0.4s;
 .page-numbers li:before{
 	display: none;
 }
->>>>>>> Stashed changes
 /* SASS imports */
 @import 'footer';
 @import 'comments';
