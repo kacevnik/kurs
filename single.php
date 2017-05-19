@@ -45,10 +45,11 @@
 			</div>
 <!-- Cats and Tags end -->
     	</div>
+      <div class="col-lg-8 col-md-8 col-sm-12 kdv-single-post">
+            <?php if (comments_open() || get_comments_number()) comments_template('', true); // если комментирование открыто - мы покажем список комментариев и форму, если закрыто, но кол-во комментов > 0 - покажем только список комментариев ?>
+      </div>
     </div>
 </div>
-            
-<?php if (comments_open() || get_comments_number()) comments_template('', true); // если комментирование открыто - мы покажем список комментариев и форму, если закрыто, но кол-во комментов > 0 - покажем только список комментариев ?>
 </section>
 <?php endwhile; // конец цикла ?>
 

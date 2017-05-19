@@ -1,5 +1,7 @@
-<div id="comments"> <?php // див с этим id нужен для якорьных ссылок на комменты ?>
-	<span>Всего комментариев: <?php echo get_comments_number(); // общие кол-во комментов ?></span>
+
+<div id="comments" class="comments-area"> <?php // див с этим id нужен для якорьных ссылок на комменты ?>
+	<div id="respond" class="comment-respond">
+	<h3 id="reply-title" class="comment-reply-title">Комментарии <?php echo get_comments_number(); ?></span></h3>
 	<?php if (have_comments()) : // если комменты есть ?>
 	<ul class="comment-list">
 		<?php
@@ -54,4 +56,5 @@
 	    ob_end_clean(); // очищаем буферизацию
 	    echo $new_form; // выводим новую форму
 	} ?>
+	</div>
 </div>
