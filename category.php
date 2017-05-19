@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<div class="pm-sub-header-container pm-parallax-panel" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="95" style="background-image: url(&quot;<?php echo get_template_directory_uri(); ?>/img/01_panel-bg.jpg&quot;); background-position: 0px 49px;">
+<div class="pm-sub-header-container pm-parallax-panel" data-stellar-background-ratio="0.5" data-stellar-vertical-offset="95" style="background-image: url(<?php if ( has_post_thumbnail() ) the_post_thumbnail_url('full');?>);">
 <!-- Breadcrumbs -->
     <div class="pm-sub-header-breadcrumbs">
         <div class="pm-sub-header-breadcrumbs-ul">

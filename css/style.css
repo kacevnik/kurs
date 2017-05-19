@@ -4764,6 +4764,17 @@ transition: all 0.4s;
 .page-numbers li:before{
 	display: none;
 }
+
+.kdv-single-post{
+	line-height: 28px;
+	font-style: normal;
+	color: #5f5f5f;
+	font-size: 14px;
+}
+
+.kdv-single-post p{
+	font-weight: 300;
+}
 /* SASS imports */
 @import 'footer';
 @import 'comments';
