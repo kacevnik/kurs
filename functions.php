@@ -191,6 +191,7 @@ if (!function_exists('add_styles')) { // если ф-я уже есть в до�
 		wp_enqueue_style( 'sidebar', get_template_directory_uri().'/css/sidebar.css' ); // Стили сайтбара
 		wp_enqueue_style( 'twitterfeed', get_template_directory_uri().'/css/twitterfeed.css' ); // Стили сайтбара
 		wp_enqueue_style( 'comments', get_template_directory_uri().'/css/comments.css' ); // Стили сайтбара
+		wp_enqueue_style( 'form', get_template_directory_uri().'/css/form.css' ); // Стили сайтбара
 	}
 }
 
