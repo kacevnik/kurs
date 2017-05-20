@@ -103,7 +103,7 @@ function kdv_custom_css_style() {
 ?>
 	<style type="text/css">
 		.pm-presentation-container{
-			background: url('http:<?php echo fw_get_db_settings_option('kdv_gallery_background')['url']; ?>')no-repeat;
+			background: url('http:<?php echo fw_get_db_settings_option('kdv_gallery_background')["url"]; ?>')no-repeat;
 		}
 	</style>
 <?php
