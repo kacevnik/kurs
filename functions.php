@@ -148,7 +148,7 @@ function the_breadcrumb($es) {
             echo '<p class="kdv-red-b">';
              the_title();
             echo '</p>';
-        }elseif(is_tag()){
+        }elseif(is_tag() || is_search()){
         	echo '<p class="kdv-red-b">';
             echo $es;
             echo '</p>';
