@@ -4,7 +4,7 @@
 <!-- Breadcrumbs -->
     <div class="pm-sub-header-breadcrumbs">
         <div class="pm-sub-header-breadcrumbs-ul">
-        	<?php the_breadcrumb(single_cat_title('', 0)); ?>
+        	<?php the_breadcrumb('<a data="0" href="'.get_category_link(get_the_category()[0]->cat_ID).'">'.get_the_category()[0]->cat_name.'</a>'); ?>
         </div>                        
     </div>
 <!-- Header Page Title --> 
