@@ -115,6 +115,15 @@ function kdv_custom_css_style() {
 <?php
 }
 
+add_action("wp_head", "kdv_custom_css_google_fonts");
+
+function kdv_custom_css_google_fonts() {
+
+?>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400&amp;subset=cyrillic" rel="stylesheet">
+<?php
+}
+
 add_action("wp_head", "kdv_custom_css_script");
  
 function kdv_custom_css_script() {
